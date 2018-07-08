@@ -1,5 +1,5 @@
 # Class booking system
-Il progetto Ë stato generato con Angular CLI version 6.0.7.
+Il progetto √® stato generato con Angular CLI version 6.0.7.
 
 Tecnologie usate:
 - Node.js
@@ -8,19 +8,19 @@ Tecnologie usate:
 
 Material design usati:
 - angular material
-- materializa css
+- materialize css
 
-## Funzionalit‡
+## Funzionalit√†
 L'applicazione permette la gestione di un aulario, l'untente si collega mediante un interfaccia di
-login. Successivamente sar‡ possibile eseguire la fase di prenotazione dell'aula. Inoltre Ë disponibile una
-dashboard dove visionare tutte le prenotazioni che sono state gi‡ effettuate.
+login. Successivamente sar√† possibile eseguire la fase di prenotazione dell'aula. Inoltre √® disponibile una
+dashboard dove visionare tutte le prenotazioni che sono state gi√† effettuate.
 
 
 ## Project Initialization
 
 Run `npm install` per scaricare tutte le dipendenze. Navigare all'url `http://localhost:4200/`.
 Il funzionamento prevede l'utilizzo di un database SQL, aventi le tabelle create mediante il file
-MyTable.sql presente in src-server. Una volta attivo il database sulla porta 3306 Ë possibile avviare il server tramite il
-comando `nodemon server.js`. In questo modo sar‡ avviato localhost:8080.
+`my_db.sql` presente in src-server. Una volta attivo il database sulla porta 3306 √® possibile avviare il server tramite il
+comando `nodemon server.js`. In questo modo sar√† avviato localhost:8080.
 
 
