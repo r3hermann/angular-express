@@ -20,7 +20,7 @@ dashboard dove visionare tutte le prenotazioni che sono state già effettuate.
 
 Run `npm install` per scaricare tutte le dipendenze. Navigare all'url `http://localhost:4200/`.
 Il funzionamento prevede l'utilizzo di un database SQL, aventi le tabelle create mediante il file
-'my_db.sql' presente in src-server. Una volta attivo il database sulla porta 3306 è possibile avviare il server tramite il
+`my_db.sql` presente in src-server. Una volta attivo il database sulla porta 3306 è possibile avviare il server tramite il
 comando `nodemon server.js`. In questo modo sarà avviato localhost:8080.
 
 
