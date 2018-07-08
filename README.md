@@ -8,7 +8,7 @@ Tecnologie usate:
 
 Material design usati:
 - angular material
-- materializa css
+- materialize css
 
 ## Funzionalità
 L'applicazione permette la gestione di un aulario, l'untente si collega mediante un interfaccia di
