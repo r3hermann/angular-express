@@ -1,0 +1,20 @@
+<mat-toolbar color="primary" >
+
+  <span>
+    <img src="assets\Università_di_Catania_logo.jpg" class="angular-logo">
+    Class booking system
+  </span>
+  <span class="fill-remaining-space"></span>
+
+  <button mat-button routerLink="/">Booking classrooms</button>
+
+  <!-- indirizzamentto diretto -->
+  <button mat-button routerLink="/admin">Control panel</button>
+
+  <button mat-button routerLink="/Contacts">About us</button>
+
+  <!-- check login -->
+  <div *ngIf="g.isLogged()">
+    <button mat-button (click)="loggingOut()">Logout</button>
+  </div>
+</mat-toolbar>

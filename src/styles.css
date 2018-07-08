@@ -1,0 +1,64 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+.angular-logo {
+    margin: 0 px 3px 0;
+    height: 60px;
+    vertical-align: middle;
+}
+.msg-logo {
+    margin: 0 px 3px 0;
+    height: 30px;
+    vertical-align: middle;
+}
+.logo{
+  padding-right: 6px;
+  height: 30px;
+  vertical-align: middle;
+}
+.cont-logo{
+  padding-right: 6px;
+  height: 30px;
+  margin-left: 20px;
+}
+.fill-remaining-space {
+  flex: 1 1 auto;
+}
+
+#right_main ul#mainFeatures {
+
+}
+
+ul#mainFeatures {
+
+}
+#mainFeatures li#position {
+    list-style: none;
+
+}
+#mainFeatures li#smartphone {
+    list-style: none;
+}
+#mainFeatures li#email {
+  list-style-image:url(assets\icon_email_322441.png);
+  list-style: none;
+}
+li {
+   text-align: left;
+}​
+ul li{
+  margin-top: 2px;
+  line-height:1.3em;
+  margin: .25em 0;
+  padding: 0 0 0 15px;
+  }
+
+  .list-header-title {
+    color: rgba(0, 0, 0, .54);
+    background: rgba(0, 0, 0, .03);
+    padding: 8px 20px;
+    font-weight: bold;
+    text-align: center; /* orizzontale */
+  }

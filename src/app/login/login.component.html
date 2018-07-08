@@ -1,0 +1,35 @@
+<div class=BoxLogin>
+  <div class="signin-content">
+    <mat-card>
+      <mat-card-content>
+
+        <form #loginForm="ngForm" class="col s12 white">
+
+          <p>Please login to continue</p>
+          <div class="row">
+            <div class="input-field col s12">
+              <!--  <mat-form-field class="full-width-input"> -->
+                  <i class="material-icons prefix">account_circle</i>
+                  <input matInput class="form-control" placeholder="Username..."  type="text" [(ngModel)]="username" name="username" required autofocus>
+              <!--  </mat-form-field> -->
+              </div>
+            </div>
+
+           <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">vpn_key</i>
+                 <input matInput type="password" class="form-control" placeholder="Password..." [(ngModel)]="password" name="password" required>
+              </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s12">
+                  <button type="submit" [disabled]="!loginForm.valid" class="btn-large btn-submit" (click)=login() >Login</button> <!-- //click method -->
+                </div>
+              </div>
+        </form>
+
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

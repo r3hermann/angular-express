@@ -1,0 +1,44 @@
+<!-- calendario -->
+<!--
+<mat-form-field>
+  <input [ngModel]="date" (ngModelChange)="onDataChange($event)" matInput [matDatepicker]="picker" placeholder="Choose a date">
+
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+
+  <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+-->
+
+<!-- <p>ngModel Value: {{value}}</p>
+<p>Date from selectedDate = {{checkDate | date: 'dd/MM/yyyy' }}</p>
+ -->
+
+<div class="container">
+      <div class="list-header-title">Class room</div>
+      <button class="btn btn-lg btn-primary float-left" (click)="setWeek('prev')">
+      <fa name="chevron-left"></fa> &nbsp; Prev week </button>
+      {{ currentDate | date }} - {{ sunday | date }}
+      <button class="btn btn-lg btn-primary float-right" (click)="setWeek('next')">Next week &nbsp;
+      <fa name="chevron-right"></fa></button>
+      <div *ngFor="let p of prenotazioni">
+        <table >
+          <thead>
+            <tr>
+              <!-- getDt getFk -->
+              <th>{{ getDt(convertStringToDate(getFk(p))) }} <br> {{ convertStringToDate(getFk(p)) }}</th>
+              <th class="orari" *ngFor="let o of orari">{{ o }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let a of p[getFk(p)]">
+              <td>{{ a.nome }}</td>
+              <td *ngFor="let n of a.prenotazioni_fill" [colSpan]="n[1]" [ngClass]="{ 'bg-primary' : n[3], 'prenotato' : n[3] }" [hidden]="!n[0]">
+                <span>
+                  {{ n[2] }}
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+</div>

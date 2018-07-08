@@ -1,0 +1,82 @@
+<div class="medium-list">
+  <div class="list-viewer-wrapper">
+      <div class="list-header-title">Class bookings systems</div>
+        <form #bookingForm="ngForm">
+
+           <div class="reg">
+            <div class="form-container">
+
+            <!-- fomr -->
+              <mat-form-field>
+                <input  matInput type="date" class="form-control"
+                placeholder="Enter your data: in format dd/mm/yy "
+                [(ngModel)]="data" name="data" required>
+              </mat-form-field>
+
+
+<!-- fomr -->
+        <div>
+            <label>Class: &nbsp; </label>
+            <select [(ngModel)]="roomRs.IdClass" name="roomRs.IdClass" required>
+              <option *ngFor="let a of aule" [value]="a.ID">{{ a.nome }}</option>
+            </select>
+            <br><br>
+          </div>
+
+<!-- fomr -->
+          <div>
+          <label> Schedule </label> &nbsp; from: &nbsp;
+          <select [(ngModel)]="roomRs.orario1" name="roomRs.orario1" required>
+            <option value="08:00">08:00</option>
+            <option value="09:00">09:00</option>
+            <option value="10:00">10:00</option>
+            <option value="11:00">11:00</option>
+            <option value="12:00">12:00</option>
+            <option value="13:00">13:00</option>
+            <option value="14:00">14:00</option>
+            <option value="15:00">15:00</option>
+            <option value="16:00">16:00</option>
+            <option value="17:00">17:00</option>
+            <option value="18:00">18:00</option>
+            <option value="19:00">19:00</option>
+          </select>
+          &nbsp; to: &nbsp;
+          <select [(ngModel)]="roomRs.orario2" name="roomRs.orario2" required>
+              <option value="08:00">08:00</option>
+              <option value="09:00">09:00</option>
+              <option value="10:00">10:00</option>
+              <option value="11:00">11:00</option>
+              <option value="12:00">12:00</option>
+              <option value="13:00">13:00</option>
+              <option value="14:00">14:00</option>
+              <option value="15:00">15:00</option>
+              <option value="16:00">16:00</option>
+              <option value="17:00">17:00</option>
+              <option value="18:00">18:00</option>
+              <option value="19:00">19:00</option>
+            </select>
+        </div>
+
+
+<!-- fomr -->
+        <mat-form-field>
+            <input  matInput type="text" class="form-control"
+            placeholder="name of professor ..."
+            [(ngModel)]="roomRs.prof" name="roomRs.prof" required>
+          </mat-form-field>
+
+<!-- fomr-->
+          <mat-form-field>
+              <input matInput class="form-control"
+              placeholder="insert the description ..."
+              type="text"
+              [(ngModel)]="roomRs.descrizione " name="roomRs.descrizione" required>
+          </mat-form-field>
+
+            <!-- check valid button -->
+          <button type="submit" [disabled]="!bookingForm.valid" mat-button class="mat-raised-button mat-primary" (click)=booking() >book now</button>
+      </div>
+    </div>
+</form>
+  </div>
+</div>
