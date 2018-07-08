@@ -8,7 +8,7 @@ Tecnologie usate:
 
 Material design usati:
 - angular material
-- materializa csss
+- materializa css
 
 ## Funzionalità
 L'applicazione permette la gestione di un aulario, l'untente si collega mediante un interfaccia di
@@ -20,7 +20,7 @@ dashboard dove visionare tutte le prenotazioni che sono state già effettuate.
 
 Run `npm install` per scaricare tutte le dipendenze. Navigare all'url `http://localhost:4200/`.
 Il funzionamento prevede l'utilizzo di un database SQL, aventi le tabelle create mediante il file
-MyTable.sql presente in srs-server. Una volta attivo il database sulla porta 3306 è possibile avviare il server tramite il
+MyTable.sql presente in src-server. Una volta attivo il database sulla porta 3306 è possibile avviare il server tramite il
 comando `nodemon server.js`. In questo modo sarà avviato localhost:8080.
 
 
